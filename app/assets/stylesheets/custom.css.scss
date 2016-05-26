@@ -1,6 +1,9 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+$color-grey: #777;
+
+
 /* universal */
 body{
   padding-top: 60px;
@@ -59,12 +62,12 @@ p{
   letter-spacing: -1px;
   padding-top: 9px;
   font-weight: bold;
+  &:hover{
+    color: $color-grey;
+    text-decoration: none;
+  }
 }
 
-#logo:hover{
-  color: #fff;
-  text-decoration: none;
-}
 
 /* footer */
 
@@ -73,11 +76,11 @@ footer{
   padding-top: 5px;
   border-top: 1px solid #eaeaea;
   color: #777;
+  a {
+    color: #555;
+  }
 }
 
-footer a{
-  color: #555;
-}
 
 footer a:hover{
   color: #222;
